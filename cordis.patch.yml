@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-pet-qq-bridge
+      name: dsh-pet-qq-bridge
+      config:
+        enabled: false

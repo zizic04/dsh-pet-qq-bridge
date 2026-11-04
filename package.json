@@ -1,0 +1,17 @@
+{
+  "name": "dsh-pet-qq-bridge",
+  "version": "0.1.0",
+  "description": "让 QQ 和桌面大肥鱼共用分层记忆：原始对话、长期事实、场景摘要、人格关系，支持纠正与遗忘",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "bin": { "dsh-pet-qq-bridge": "src/cli.js", "dsh-pet-memory-patch": "src/patch-cli.js", "dsh-pet-qq-configure": "src/configure-profile.js" },
+  "files": ["src", "cordis.patch.yml", "bridge.example.json", "README.md", "TESTING.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "licenses"],
+  "scripts": { "test": "node --test", "start": "node src/cli.js", "check": "node --check src/index.js && node --check src/cli.js && node --test" },
+  "engines": { "node": ">=22.12.0" },
+  "license": "MIT",
+  "keywords": ["dsh-plugin", "deepseek-harness", "dsh-pet", "qqbot", "memory"],
+  "repository": { "type": "git", "url": "https://github.com/zizic04/dsh-pet-qq-bridge.git" },
+  "dependencies": { "@tencent-connect/qqbot-nodejs": "1.0.5", "@deepseek-ai/schemastery": "3.18.1", "yaml": "2.8.1" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

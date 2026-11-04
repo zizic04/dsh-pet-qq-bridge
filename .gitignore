@@ -1,0 +1,10 @@
+node_modules/
+*.tgz
+.env
+.env.*
+!.env.example
+bridge.config.json
+*.local.json
+*.log
+.DS_Store
+coverage/

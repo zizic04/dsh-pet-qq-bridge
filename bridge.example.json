@@ -1,0 +1,8 @@
+{
+  "qqProfileDir": "/请替换为你的DSH目录/profiles/desktop",
+  "petBaseUrl": "http://127.0.0.1:3080",
+  "petId": "请替换为实际宠物ID",
+  "surface": "any",
+  "timeoutMs": 120000,
+  "maxQueue": 3
+}
